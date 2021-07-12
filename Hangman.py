@@ -69,7 +69,7 @@ HANGMAN_SPRITES = ("""
  =========""")
 
 def selectNewWord():
-    string = words[random.randint(0, len(words)-1)]
+    string = words[random.randint(0, len(words)-2)]
     string = string.rstrip(string[-1])
     for char in string:
         chars_guessed.append(False)
